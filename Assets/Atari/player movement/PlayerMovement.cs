@@ -50,6 +50,8 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("In seconds. Time after leaving the jump window you are still able to jump.")][SerializeField] private Cooldown jumpCoyoteTime = new();
     [Tooltip("In seconds. Time after leaving the jump window you are still able to jump.")][SerializeField] private Cooldown wallCoyoteTime = new();
     [Tooltip("In seconds. Time before enter the jump window you are still able to jump.")][SerializeField] private Cooldown bufferTime = new();
+    [SerializeField] private float runFriction = 0f;
+    [SerializeField] private float resistFriction = 2f;
 
     [Header("Stat Buffs")]
     [SerializeField] private float airAccelerationMultiplier = 0.8f; 
@@ -102,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
         {
             // ...continue resisting until acceleration stops
             isResisting = Mathf.Abs(rb.linearVelocityX - xForce.x) > Mathf.Abs(rb.linearVelocityX);
-            rb.linearDamping = 2;
+            rb.linearDamping = resistFriction;
         }
         else
         {
@@ -112,11 +114,11 @@ public class PlayerMovement : MonoBehaviour
             // friction
             if (xForce.x == 0)
             {
-                rb.linearDamping = 2;
+                rb.linearDamping = resistFriction;
             }
             else
             {
-                rb.linearDamping = 0;
+                rb.linearDamping = runFriction;
             }
         }
 
