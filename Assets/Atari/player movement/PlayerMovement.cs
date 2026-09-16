@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("In seconds. Time before enter the jump window you are still able to jump.")][SerializeField] private Cooldown bufferTime = new();
     [SerializeField] private float runFriction = 0f;
     [SerializeField] private float resistFriction = 2f;
+    private float XLinearDampening = 0f;
 
     [Header("Stat Buffs")]
     [SerializeField] private float airAccelerationMultiplier = 0.8f; 
@@ -104,23 +105,25 @@ public class PlayerMovement : MonoBehaviour
         {
             // ...continue resisting until acceleration stops
             isResisting = Mathf.Abs(rb.linearVelocityX - xForce.x) > Mathf.Abs(rb.linearVelocityX);
-            rb.linearDamping = resistFriction;
+            XLinearDampening = resistFriction;
         }
         else
         {
             // ...else consider whether the player was already in motion
-            isResisting = Mathf.Abs(rb.linearVelocityX - xForce.x) > Mathf.Abs(rb.linearVelocityX) && Mathf.Abs(rb.linearVelocityX) > acceleration;
+            isResisting = Mathf.Abs(rb.linearVelocityX - xForce.x) > Mathf.Abs(rb.linearVelocityX) && Mathf.Abs(rb.linearVelocityX) > maxSpeed/2f;
 
             // friction
             if (xForce.x == 0)
             {
-                rb.linearDamping = resistFriction;
+                XLinearDampening = resistFriction;
             }
             else
             {
-                rb.linearDamping = runFriction;
+                XLinearDampening = runFriction;
             }
         }
+
+        rb.linearVelocityX *= (1 - XLinearDampening * Time.deltaTime); // dampen x velocity but maintain y velocity
 
         animator.SetBool(IsGroundedHash, isGrounded);
         animator.SetFloat(xSpeedHash, Mathf.Abs(rb.linearVelocityX));
@@ -146,7 +149,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // acceleration modifiers
-        float appliedAcceleration = acceleration * Time.fixedDeltaTime * 100;
+        float appliedAcceleration = acceleration * speedMultiplier * Time.fixedDeltaTime * 100;
         if (!isGrounded)
         {
             appliedAcceleration *= airAccelerationMultiplier;
@@ -154,8 +157,6 @@ public class PlayerMovement : MonoBehaviour
 
         rb.AddForce(appliedAcceleration * xForce); // movement acceleration
         rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -maxSpeed, maxSpeed); // clamp speed  
-
-
 
         // --------------------------------------------- //
         // if unable to jump or not on the wall, store velocities
