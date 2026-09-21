@@ -222,6 +222,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 6b444451-8a00-4d00-a97e-f47457f736a8
     m_ActionName: 'Player/Look[/Mouse/delta,/Pen/delta]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: acfd5484-ccd0-47f0-b352-00bbe7ccd369
+    m_ActionName: 'UI/Pause[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -236,7 +240,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5217795178710153610}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3940c3d9f17ed3f4c9d4bb637e416b23, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b8a1a06d20803c4686f0b9062005ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 10
@@ -249,7 +253,7 @@ MonoBehaviour:
   bufferTime:
     cooldown: 0.1
   runFriction: 0
-  resistFriction: 5
+  resistFriction: 10
   airAccelerationMultiplier: 0.5
   speedMultiplier: 1
 --- !u!50 &1897885751914146999
