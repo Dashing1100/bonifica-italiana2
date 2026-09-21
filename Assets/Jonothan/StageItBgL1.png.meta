@@ -1,31 +1,10 @@
 fileFormatVersion: 2
-guid: 9e8784cde9992cb4ea3cfdd411c06c70
+guid: a43ad2c06a6ea3f42be63c13c35705c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5702939079018767606
-    second: fast_0
-  - first:
-      213: 6835215915261403500
-    second: fast_1
-  - first:
-      213: 1228009057550263992
-    second: fast_2
-  - first:
-      213: -8060318263267399943
-    second: fast_3
-  - first:
-      213: -8220317827468392634
-    second: fast_4
-  - first:
-      213: -1890130062372979297
-    second: fast_5
-  - first:
-      213: 7078524219503537048
-    second: fast_6
-  - first:
-      213: 8450531357793457944
-    second: fast_7
+      213: -3659438640934981916
+    second: StageItBgL1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -147,89 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fast_0
+      name: StageItBgL1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 14
-        height: 16
+        y: 0
+        width: 640
+        height: 147
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f46b9c70e8e42f40800000000000000
-      internalID: 5702939079018767606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fast_1
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 16
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d09783f8f11eee4f8abe4aa73cfd42f
-      internalID: 6835215915261403500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fast_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a26bc3bd192b6c44fa1d318b56ff1eb8
-      internalID: 1228009057550263992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fast_3
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 0
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67683fdc4df0c544482f9313731cd9cf
-      internalID: -8060318263267399943
+      spriteID: 4ee6bb1d1ff073dc0800000000000000
+      internalID: -3659438640934981916
       vertices: []
       indices: 
       edges: []
@@ -238,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d33d49d88fd3340488252bebb66665a2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -246,14 +159,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":14.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      fast_0: 5702939079018767606
-      fast_1: 6835215915261403500
-      fast_2: 1228009057550263992
-      fast_3: -8060318263267399943
+      StageItBgL1_0: -3659438640934981916
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
