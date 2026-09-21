@@ -3,10 +3,12 @@ using UnityEngine;
 public class Bomber : MonoBehaviour
 {
     public GameObject bob;
+    public float minWaitTime;
+    public float maxWaitTime;
 
     void Start()
     {
-        SpawnBomber();
+        InvokeRepeating("SpawnBomber", Mathf.RoundToInt(Random.Range(minWaitTime, maxWaitTime)), 0f);
     }
 
     public void SpawnBomber()
