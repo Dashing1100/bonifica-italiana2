@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
     public float bulletSpeed;
     private float timer = 0f;
     public Collider2D col;
+
     void Start()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
@@ -27,9 +28,6 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
 
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
     }
 
 }
