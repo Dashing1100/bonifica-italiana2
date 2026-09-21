@@ -240,6 +240,8 @@ public class PlayerMovement : MonoBehaviour
         // short circuits
         if (!ctx.performed) return;
 
+        Debug.Log("please jump please");
+
         bufferTime.Trigger();
     }
 
