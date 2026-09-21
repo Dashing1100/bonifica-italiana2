@@ -6,12 +6,10 @@ public class Bullet : MonoBehaviour
     public float bulletSpeed;
     private float timer = 0f;
     public Collider2D col;
-    public SpriteRenderer sr;
     void Start()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
-        sr = GetComponent<SpriteRenderer>();
         timer = 0.1f;
 
         if (rb != null)
@@ -32,10 +30,6 @@ public class Bullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Bullet collided with: " + collision.gameObject.name);
-        collision.gameObject.GetComponent<EnemyHealth>()?.TakeDamage(15f); // Assuming the target has a Health component}
-        col.enabled = false; // Deactivate the bullet on collision
-        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0.3f); // Make the bullet invisible
     }
 
 }
