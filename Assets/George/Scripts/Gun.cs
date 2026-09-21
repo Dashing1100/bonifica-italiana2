@@ -1,4 +1,3 @@
-using System.Drawing;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -23,7 +22,7 @@ public class Gun : MonoBehaviour
     {
         aimDir = ctx.ReadValue<float>();
 
-
+        //point.transform.rotation = ;
         
     }
     public void Fire(){
