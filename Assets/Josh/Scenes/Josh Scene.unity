@@ -306,10 +306,10 @@ MonoBehaviour:
   groundCheck: {fileID: 1324714529}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!1 &139783674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::health
   Hearts: 3
-  Iframe: 1
+  Iframe: 1.5
   IsNoHarm: 0
   respawnTime: 3
   spawnPoint: {fileID: 677952173}
