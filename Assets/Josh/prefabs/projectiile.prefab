@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -1052620602069008379}
   m_Layer: 0
   m_Name: projectiile
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::projectileScript
   player: {fileID: 4984435223384742170, guid: c905fff1a0d209146a2be1b14da50634, type: 3}
   force: 10
+  lifetime: 3
 --- !u!50 &-6286292414044360674
 Rigidbody2D:
   serializedVersion: 5

@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class LandEnemy : MonoBehaviour
 {
+    [SerializeField] private int health = 1;
+
     private enum EnemyState {patrol, resting, charging}
 
     [Header("SHOOTER")]
@@ -55,13 +57,17 @@ public class LandEnemy : MonoBehaviour
   
     private void FixedUpdate()
     {
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
 
         CheckEnvironment();
         if (isShooter)
         {
             Vector3 currentLocalEuler = transform.localEulerAngles;
             transform.localRotation = Quaternion.Euler(currentLocalEuler.x, currentLocalEuler.y, 0f);
-
+            if (player == null) return;
             float distance = Vector2.Distance(transform.position, player.transform.position);
 
 
@@ -112,7 +118,7 @@ public class LandEnemy : MonoBehaviour
             {
                 speed = 0;
             }
-
+            if (player == null) return;
             float distance = Vector2.Distance(transform.position, player.transform.position);
             
                 if (distance < 10 && !isCharging)
@@ -148,6 +154,11 @@ public class LandEnemy : MonoBehaviour
         {
             Vector2 enemyPos = collision.transform.position;
 
+
+        }
+        if (collision.collider.CompareTag("PBullet"))
+        {
+            health--;
 
         }
     }
