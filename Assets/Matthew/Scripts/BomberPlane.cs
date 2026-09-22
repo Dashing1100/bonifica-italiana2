@@ -7,9 +7,15 @@ public class BomberPlane : MonoBehaviour
     public float duration = 3f;
 
     private float elapsedTime = 0f;
+    public GameObject bomb;
+    public float minWaitTime;
+    public float maxWaitTime;
+
+    private float time;
 
     void Start()
     {
+        SpawnBomb();
         startPoint = GameObject.FindGameObjectWithTag("BombBegin").transform;
         endPoint = GameObject.FindGameObjectWithTag("BombEnd").transform;
     }
@@ -27,5 +33,14 @@ public class BomberPlane : MonoBehaviour
             transform.position = endPoint.position; // Snap to the final position
             Destroy(gameObject);
         }
+    }
+
+    public void SpawnBomb()
+    {
+        GameObject nuke = Instantiate(bomb, transform.position, Quaternion.identity);
+        Debug.Log("BOMB INBOUND");
+
+        // recursive call
+        Invoke("SpawnBomb", Random.Range(minWaitTime, maxWaitTime));
     }
 }
