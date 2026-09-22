@@ -27,6 +27,17 @@ public class health : MonoBehaviour
                 return;
             }
         }
+        if (other.collider.CompareTag("bomb"))
+        {
+            if (!IsNoHarm)
+            {
+                StartCoroutine(NoDamage2());
+            }
+            else
+            {
+                return;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -49,6 +60,14 @@ public class health : MonoBehaviour
  IEnumerator NoDamage()
     {
      Hearts--;
+        IsNoHarm = true;
+        yield return new WaitForSecondsRealtime(Iframe);
+        IsNoHarm = false;
+    }
+    IEnumerator NoDamage2()
+    {
+        Hearts--;
+        Hearts--;
         IsNoHarm = true;
         yield return new WaitForSecondsRealtime(Iframe);
         IsNoHarm = false;

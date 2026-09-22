@@ -156,10 +156,14 @@ public class LandEnemy : MonoBehaviour
 
 
         }
-        if (collision.collider.CompareTag("PBullet"))
+        
+        if (collision.collider.CompareTag("Player"))
+        {
+           if (collision.collider.CompareTag("PBullet"))
         {
             health--;
 
+        } 
         }
     }
     private void Flip()
