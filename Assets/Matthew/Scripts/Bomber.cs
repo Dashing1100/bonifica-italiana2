@@ -6,8 +6,6 @@ public class Bomber : MonoBehaviour
     public float minWaitTime;
     public float maxWaitTime;
 
-    private float time;
-
     void Start()
     {
         SpawnBomber();

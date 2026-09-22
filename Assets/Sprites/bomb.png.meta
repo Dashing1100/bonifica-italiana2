@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: eca7860407208bd478f2c3acc5e4d4cf
+guid: e9f9877e2fe519644ac3405cac1d5fcb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 147411387904568955
-    second: B-17 Bomber_0
+      213: -2613247888821195678
+    second: bomb_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: B-17 Bomber_0
+      name: bomb_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 8
-        width: 47
-        height: 17
+        x: 0
+        y: 0
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b7e26e350e5bb0200800000000000000
-      internalID: 147411387904568955
+      spriteID: 26ce5c404e0ebbbd0800000000000000
+      internalID: -2613247888821195678
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      B-17 Bomber_0: 147411387904568955
+      bomb_0: -2613247888821195678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
