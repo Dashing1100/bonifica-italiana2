@@ -227,6 +227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 5217795178710153610, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6340534480965434975, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.02746582
@@ -642,6 +646,7 @@ MonoBehaviour:
   bob: {fileID: 3881103339165059992, guid: 4dc483daa2d8bf94d957570a5ea1a1d6, type: 3}
   minWaitTime: 5
   maxWaitTime: 10
+  explosion: {fileID: 92579550022906549, guid: b883491ce73315c4f81c4c36a2fcaddd, type: 3}
 --- !u!1 &1343411637
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +693,7 @@ GameObject:
   - component: {fileID: 1555327588}
   m_Layer: 6
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

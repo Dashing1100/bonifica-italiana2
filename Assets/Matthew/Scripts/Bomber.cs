@@ -6,7 +6,7 @@ public class Bomber : MonoBehaviour
     public float minWaitTime;
     public float maxWaitTime;
 
-    private float time;
+    [SerializeField] private GameObject explosion;
 
     void Start()
     {
@@ -15,6 +15,7 @@ public class Bomber : MonoBehaviour
     public void SpawnBomber()
     {
         GameObject plane = Instantiate(bob, transform.position, Quaternion.identity);
+        plane.GetComponent<BomberPlane>().explosion = explosion;
         Debug.Log("BOMBER INBOUND");
 
         // recursive call

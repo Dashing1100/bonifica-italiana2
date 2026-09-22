@@ -6,6 +6,9 @@ public class bomb : MonoBehaviour
     public Rigidbody2D rb;
     public CircleCollider2D CC2D;
     SpriteRenderer sR;
+
+    public GameObject explosion;
+
     void Start()
     {
         Destroy(gameObject, 5f);
@@ -15,11 +18,6 @@ public class bomb : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -27,6 +25,9 @@ public class bomb : MonoBehaviour
         {
             CC2D.radius = 1.25f;
             sR.enabled = false;
+
+            Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
+
             Destroy(gameObject, .1f);
         }
     }
