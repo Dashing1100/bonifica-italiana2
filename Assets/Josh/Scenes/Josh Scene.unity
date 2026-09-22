@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &62246098
 Rigidbody2D:
   serializedVersion: 5
@@ -1082,6 +1082,7 @@ MonoBehaviour:
   bob: {fileID: 3881103339165059992, guid: 4dc483daa2d8bf94d957570a5ea1a1d6, type: 3}
   minWaitTime: 5
   maxWaitTime: 10
+  explosion: {fileID: 92579550022906549, guid: b883491ce73315c4f81c4c36a2fcaddd, type: 3}
 --- !u!212 &1331316744
 SpriteRenderer:
   serializedVersion: 3
@@ -1304,7 +1305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &1801278458
 Rigidbody2D:
   serializedVersion: 5
@@ -1472,10 +1473,10 @@ MonoBehaviour:
   groundCheck: {fileID: 293186774}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   playerLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 72
 --- !u!1001 &1689337353471719428
 PrefabInstance:
   m_ObjectHideFlags: 0
