@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7683170788869637468}
   - component: {fileID: 5018943774300427554}
   - component: {fileID: 2946711887644217528}
+  - component: {fileID: -2174824610379938824}
   m_Layer: 0
   m_Name: Bomber Plane
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.1517425, y: 0.63761, z: 0.63761}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,9 +81,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 147411387904568955, guid: eca7860407208bd478f2c3acc5e4d4cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105,9 +106,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b5761893efd9f4589d930052d4d3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BomberPlane
-  startPoint: {fileID: 0}
-  endPoint: {fileID: 0}
-  duration: 3
+  duration: 10
+  speed: 10.5
   bomb: {fileID: 3760551004823731186, guid: 7e0b584be0a2c1e429979f7f134649f2, type: 3}
   minWaitTime: 0.818
   maxWaitTime: 0.818
+--- !u!50 &-2174824610379938824
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3881103339165059992}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
