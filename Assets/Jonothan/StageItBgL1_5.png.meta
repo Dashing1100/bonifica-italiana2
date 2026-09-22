@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: a43ad2c06a6ea3f42be63c13c35705c4
+guid: 8b71f612c90921148846179e561c50b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3659438640934981916
-    second: StageItBgL1_0
+      213: 7468952776458431859
+    second: StageItBgL1_5_0
+  - first:
+      213: -5047611699799579914
+    second: StageItBgL1_5_1
+  - first:
+      213: -8196985370608685718
+    second: StageItBgL1_5_2
+  - first:
+      213: -4870094663692522514
+    second: StageItBgL1_5_3
+  - first:
+      213: 8225393601524976031
+    second: StageItBgL1_5_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StageItBgL1_0
+      name: StageItBgL1_5_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 640
-        height: 111
+        x: 16
+        y: 39
+        width: 126
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ee6bb1d1ff073dc0800000000000000
-      internalID: -3659438640934981916
+      spriteID: 37de8fc5afc07a760800000000000000
+      internalID: 7468952776458431859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageItBgL1_5_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 39
+        width: 120
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2275507e743f9b0800000000000000
+      internalID: -5047611699799579914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageItBgL1_5_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 39
+        width: 99
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6dabc32c357e3e80800000000000000
+      internalID: -8196985370608685718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageItBgL1_5_3
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 39
+        width: 65
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebe41cc4b2f96cb0800000000000000
+      internalID: -4870094663692522514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StageItBgL1_5_4
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 39
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99caac86e7762270800000000000000
+      internalID: 8225393601524976031
       vertices: []
       indices: 
       edges: []
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StageItBgL1_0: -3659438640934981916
+      StageItBgL1_5_0: 7468952776458431859
+      StageItBgL1_5_1: -5047611699799579914
+      StageItBgL1_5_2: -8196985370608685718
+      StageItBgL1_5_3: -4870094663692522514
+      StageItBgL1_5_4: 8225393601524976031
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
