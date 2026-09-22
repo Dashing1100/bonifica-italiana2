@@ -13,6 +13,7 @@ public class BomberPlane : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    public GameObject explosion;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class BomberPlane : MonoBehaviour
     public void SpawnBomb()
     {
         GameObject nuke = Instantiate(bomb, transform.position, Quaternion.identity);
+        nuke.GetComponent<bomb>().explosion = explosion;
         Debug.Log("BOMB INBOUND");
 
         // recursive call
