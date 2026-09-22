@@ -6,13 +6,18 @@ public class Bomber : MonoBehaviour
     public float minWaitTime;
     public float maxWaitTime;
 
+    private float time;
+
     void Start()
     {
-        InvokeRepeating("SpawnBomber", Mathf.RoundToInt(Random.Range(minWaitTime, maxWaitTime)), 0f);
+        SpawnBomber();
     }
-
     public void SpawnBomber()
     {
         GameObject plane = Instantiate(bob, transform.position, Quaternion.identity);
+        Debug.Log("BOMBER INBOUND");
+
+        // recursive call
+        Invoke("SpawnBomber", Mathf.RoundToInt(Random.Range(minWaitTime, maxWaitTime)));
     }
 }
