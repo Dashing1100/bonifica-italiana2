@@ -15,6 +15,8 @@ public class knockback : MonoBehaviour
 
     [SerializeField] private LayerMask playerLayer;
 
+   public float knockbackPower;
+
     private Rigidbody2D rb;
 
 
@@ -38,7 +40,27 @@ public class knockback : MonoBehaviour
             Vector2 enemyPos = collision.transform.position;
 
 
-            float knockbackPower = 10f;
+            knockbackPower = 25f;
+
+
+            ApplyKnockback(enemyPos, knockbackPower);
+        }
+        if (collision.collider.CompareTag("Bullet"))
+        {
+            Vector2 enemyPos = collision.transform.position;
+
+
+            knockbackPower = 5f;
+
+
+            ApplyKnockback(enemyPos, knockbackPower);
+        }
+        if (collision.collider.CompareTag("bomb"))
+        {
+            Vector2 enemyPos = collision.transform.position;
+
+
+            knockbackPower = 50f;
 
 
             ApplyKnockback(enemyPos, knockbackPower);

@@ -172,3 +172,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::bomb
   rb: {fileID: 0}
   CC2D: {fileID: 0}
+  explosion: {fileID: 0}
