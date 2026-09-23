@@ -136,7 +136,7 @@ public class LandEnemy : MonoBehaviour
             
             rb.linearVelocity = new Vector2((movingRight ? 1 : -1) * speed, -9.8f);
 
-            RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, 1f, groundLayer);
+            RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, 2f, groundLayer);
 
             if (groundInfo.collider == false)
             {
@@ -188,7 +188,7 @@ public class LandEnemy : MonoBehaviour
     {
        
                                    
-    RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, 1f, groundLayer);
+    RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, 2f, groundLayer);
 
         if (groundCheck)
         {
