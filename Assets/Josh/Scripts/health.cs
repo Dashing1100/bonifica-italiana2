@@ -2,6 +2,7 @@ using System.Collections;
 using System.Reflection.Metadata.Ecma335;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class health : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class health : MonoBehaviour
     public float respawnTime;
 
     public Transform spawnPoint;
+    public Image heart1;
+    public Image heart2;
+    public Image heart3;
+
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -44,7 +49,6 @@ public class health : MonoBehaviour
     {
         if(Hearts <= 0)
         {
-            
             StartCoroutine(RespawnRoutine());
             Hearts = 3;
 
