@@ -49,9 +49,12 @@ public class LandEnemy : MonoBehaviour
     private Rigidbody2D rb;
     private bool movingRight = true;
 
+    private Animator anim;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
   
@@ -98,7 +101,8 @@ public class LandEnemy : MonoBehaviour
                 rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
 
-
+            // shooter update animator :3
+            anim.SetFloat("speed", Mathf.Abs(rb.linearVelocityX));
         }
         if (isCharger )
         {
@@ -139,6 +143,8 @@ public class LandEnemy : MonoBehaviour
                 Flip();
             }
 
+            // charger update animator :3
+            anim.SetFloat("state", (int)currentState);
         }
     }
 
