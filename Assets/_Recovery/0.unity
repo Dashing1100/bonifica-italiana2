@@ -547,9 +547,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5217795178710153610, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
       insertIndex: -1
       addedObject: {fileID: 566571719}
-    - targetCorrespondingSourceObject: {fileID: 5217795178710153610, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 566571727}
   m_SourcePrefab: {fileID: 100100000, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
 --- !u!1 &566571718 stripped
 GameObject:
@@ -570,26 +567,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::health
   Hearts: 3
   Iframe: 1
-  IsNoHarm: 1
+  IsNoHarm: 0
   respawnTime: 0.2
   spawnPoint: {fileID: 677952173}
---- !u!114 &566571727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566571718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 404c53c2bb9540a4eb0fb36d56139c78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::knockback
-  knockbackTime: 0.2
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  knockbackPower: 100
 --- !u!1 &677952172
 GameObject:
   m_ObjectHideFlags: 0
