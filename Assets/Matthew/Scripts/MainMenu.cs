@@ -3,7 +3,6 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     public GameObject mainMenu;
-    public GameObject levelMenu;
     public GameObject settingsMenu;
 
     void Start()
@@ -14,7 +13,6 @@ public class MainMenu : MonoBehaviour
     public void ResetMenu()
     {
         settingsMenu.SetActive(false);
-        levelMenu.SetActive(false);
         mainMenu.SetActive(true);
     }
 

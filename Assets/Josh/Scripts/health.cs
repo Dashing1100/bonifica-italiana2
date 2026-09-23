@@ -14,9 +14,9 @@ public class health : MonoBehaviour
     public float respawnTime;
 
     public Transform spawnPoint;
-    public Image heart1;
-    public Image heart2;
-    public Image heart3;
+    public GameObject heart1;
+    public GameObject heart2;
+    public GameObject heart3;
 
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -58,18 +58,47 @@ public class health : MonoBehaviour
 {
   yield return new WaitForSecondsRealtime(respawnTime);
         Hearts = 3;
+        heart1.SetActive(true);
+        heart2.SetActive(true);
+        heart3.SetActive(true);
         transform.position = spawnPoint.position;
         transform.rotation = spawnPoint.rotation;
 }
  IEnumerator NoDamage()
     {
-     Hearts--;
+        if (Hearts == 3)
+        {
+            heart3.SetActive(false);
+        }
+        if (Hearts == 2)
+        {
+            heart2.SetActive(false);
+        }
+        if (Hearts == 1)
+        {
+            heart1.SetActive(false);
+        }
+        Hearts--;
         IsNoHarm = true;
         yield return new WaitForSecondsRealtime(Iframe);
         IsNoHarm = false;
     }
     IEnumerator NoDamage2()
     {
+        if (Hearts == 3)
+        {
+            heart3.SetActive(false);
+            heart2.SetActive(false);
+        }
+        if (Hearts == 2)
+        {
+            heart2.SetActive(false);
+            heart1.SetActive(false);
+        }
+        if (Hearts == 1)
+        {
+            heart1.SetActive(false);
+        }
         Hearts--;
         Hearts--;
         IsNoHarm = true;
