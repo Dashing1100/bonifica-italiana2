@@ -68,6 +68,9 @@ public class LandEnemy : MonoBehaviour
         CheckEnvironment();
         if (isShooter)
         {
+            // shooter update animator :3
+            anim.SetFloat("speed", Mathf.Abs(rb.linearVelocityX));
+
             Vector3 currentLocalEuler = transform.localEulerAngles;
             transform.localRotation = Quaternion.Euler(currentLocalEuler.x, currentLocalEuler.y, 0f);
             if (player == null) return;
@@ -99,13 +102,16 @@ public class LandEnemy : MonoBehaviour
             {
                 rb.constraints = RigidbodyConstraints2D.None;
                 rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            }
 
-            // shooter update animator :3
-            anim.SetFloat("speed", Mathf.Abs(rb.linearVelocityX));
+                rb.linearVelocity = new Vector2((movingRight ? 1 : -1) * speed, -9.8f);
+            }
         }
         if (isCharger )
         {
+            // charger update animator :3
+            Debug.Log((int)currentState);
+            anim.SetInteger("state", (int)currentState);
+
             if (currentState == EnemyState.patrol)
             {
                 speed = 8;
@@ -142,9 +148,6 @@ public class LandEnemy : MonoBehaviour
             {
                 Flip();
             }
-
-            // charger update animator :3
-            anim.SetFloat("state", (int)currentState);
         }
     }
 

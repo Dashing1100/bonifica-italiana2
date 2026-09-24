@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6246664152522546308}
   - component: {fileID: 5374880656055217488}
   - component: {fileID: 1361645063925503958}
-  - component: {fileID: 1216792531135299931}
+  - component: {fileID: 7328276948152283386}
   m_Layer: 0
   m_Name: bayonet
   m_TagString: Enemy
@@ -209,7 +209,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &1216792531135299931
+--- !u!61 &7328276948152283386
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,5 +253,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
