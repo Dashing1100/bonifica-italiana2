@@ -3,9 +3,10 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public float bulletSpeed;
+    public float bulletSpeed = 40;
     public float timer = 1f;
     public Collider2D col;
+    public float dir;
 
     void Start()
     {
@@ -14,9 +15,9 @@ public class Bullet : MonoBehaviour
 
         if (rb != null)
         {
-            rb.linearVelocity = transform.up * bulletSpeed; // Adjust the speed as needed
+            //rb.linearVelocity = transform.right * bulletSpeed * dir; // Adjust the speed as needed
         }
-        Destroy(gameObject, timer);
+        Destroy(gameObject, timer); 
 
     }
 }

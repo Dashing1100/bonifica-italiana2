@@ -22,12 +22,15 @@ MonoBehaviour:
   m_AdditionalPlatformBuildSettings: []
   m_OverrideGlobalSceneList: 1
   m_Scenes:
-  - m_enabled: 1
+  - m_enabled: 0
     m_path: Assets/Matthew/Scenes/pause menu/pause menu.unity
     m_guid: d1c9bf70a61271a49965672327d23ee8
   - m_enabled: 1
     m_path: Assets/Matthew/Scenes/Main Menu.unity
     m_guid: 0f8ddb74eb7ee8e40af1df335d2bfa6a
+  - m_enabled: 1
+    m_path: Assets/Levels/Level1.unity
+    m_guid: 872054dc8c636e9488353630f8c869c5
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
