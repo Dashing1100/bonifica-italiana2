@@ -9,6 +9,7 @@ public class Gun : MonoBehaviour
     public float aimDir;
     public float timer;
     public float cooldown;
+    public AudioClip GunFire;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,8 +39,10 @@ public class Gun : MonoBehaviour
         }
     }
     public void Fire(){
+        AudioSource.PlayClipAtPoint(GunFire, transform.position);
         if (timer <= 0)
         {
+            
             GameObject Bullet = Instantiate(BulletPrefab, point.transform.position, Quaternion.Euler(0,0,90)); 
             Bullet.GetComponent<Rigidbody2D>().linearVelocity = transform.right * Bullet.GetComponent<Bullet>().bulletSpeed * aimDir;
             timer = cooldown;
