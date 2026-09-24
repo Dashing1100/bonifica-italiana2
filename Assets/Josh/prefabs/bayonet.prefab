@@ -187,6 +187,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 72
+  deathparticles: {fileID: 3502388742270354601, guid: a4ec6f93908003d4891e2ee300652f20, type: 3}
 --- !u!95 &1361645063925503958
 Animator:
   serializedVersion: 7

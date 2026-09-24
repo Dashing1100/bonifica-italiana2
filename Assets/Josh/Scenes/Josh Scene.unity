@@ -329,57 +329,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 566571727}
   m_SourcePrefab: {fileID: 100100000, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
---- !u!1 &471892686 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7358085927000749293, guid: 217df4b3739782a46b47eb292a6ff5be, type: 3}
-  m_PrefabInstance: {fileID: 9164779696455069232}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &471892693
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471892686}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 2, y: 2}
-  m_EdgeRadius: 0
 --- !u!1 &566571718 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5217795178710153610, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
@@ -405,6 +354,7 @@ MonoBehaviour:
   heart1: {fileID: 0}
   heart2: {fileID: 0}
   heart3: {fileID: 0}
+  deathMenu: {fileID: 0}
 --- !u!114 &566571727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1229,10 +1179,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1216792531135299931, guid: 217df4b3739782a46b47eb292a6ff5be, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7358085927000749293, guid: 217df4b3739782a46b47eb292a6ff5be, type: 3}
       propertyPath: m_Name
       value: bayonet
@@ -1277,14 +1223,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1216792531135299931, guid: 217df4b3739782a46b47eb292a6ff5be, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7358085927000749293, guid: 217df4b3739782a46b47eb292a6ff5be, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 471892693}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 217df4b3739782a46b47eb292a6ff5be, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

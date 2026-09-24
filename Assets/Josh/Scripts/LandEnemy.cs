@@ -49,7 +49,9 @@ public class LandEnemy : MonoBehaviour
     private Rigidbody2D rb;
     private bool movingRight = true;
 
+    [Header("OTHER")]
     private Animator anim;
+    [SerializeField] private GameObject deathparticles;
 
     void Start()
     {
@@ -62,6 +64,7 @@ public class LandEnemy : MonoBehaviour
     {
         if(health <= 0)
         {
+            Instantiate(deathparticles, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 
