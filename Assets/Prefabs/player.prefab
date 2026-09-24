@@ -105,12 +105,13 @@ GameObject:
   - component: {fileID: 321383075502986581}
   - component: {fileID: 88524776396352302}
   - component: {fileID: 1897885751914146999}
+  - component: {fileID: 8455086943898638372}
   - component: {fileID: 6607702203987007539}
   - component: {fileID: 5343928125758282893}
   - component: {fileID: 259829198237881693}
   m_Layer: 7
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -417,6 +418,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8455086943898638372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5217795178710153610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fcab07677592841ab4e9d2277e1b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::health
+  Hearts: 3
+  Iframe: 1
+  IsNoHarm: 0
+  respawnTime: 0
+  spawnPoint: {fileID: 0}
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
+  heart3: {fileID: 0}
+  deathMenu: {fileID: 0}
 --- !u!61 &6607702203987007539
 BoxCollider2D:
   m_ObjectHideFlags: 0
