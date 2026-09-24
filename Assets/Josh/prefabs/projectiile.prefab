@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::projectileScript
   player: {fileID: 4984435223384742170, guid: c905fff1a0d209146a2be1b14da50634, type: 3}
-  force: 10
+  force: 20
   lifetime: 3
 --- !u!50 &-6286292414044360674
 Rigidbody2D:
