@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: GasStation_54
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: 1032542738, guid: 4be9249639d9fd144b6e1d28de23df57, type: 3}
+  m_Sprite: {fileID: 1032542738, guid: c35dee43d22cb714e8d094e5a02233ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

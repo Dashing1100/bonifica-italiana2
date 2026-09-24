@@ -17,6 +17,12 @@ public class health : MonoBehaviour
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
+    public GameObject deathMenu;
+
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
 
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -45,13 +51,19 @@ public class health : MonoBehaviour
         }
     }
 
+    public void DeathScreen()
+    {
+        StartCoroutine(RespawnRoutine());
+        Hearts = 3;
+        Time.timeScale = 1f;
+    }
+
     private void FixedUpdate()
     {
         if(Hearts <= 0)
         {
-            StartCoroutine(RespawnRoutine());
-            Hearts = 3;
-
+            deathMenu.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
     IEnumerator RespawnRoutine()
@@ -61,6 +73,7 @@ public class health : MonoBehaviour
         heart1.SetActive(true);
         heart2.SetActive(true);
         heart3.SetActive(true);
+        deathMenu.SetActive(false);
         transform.position = spawnPoint.position;
         transform.rotation = spawnPoint.rotation;
 }
