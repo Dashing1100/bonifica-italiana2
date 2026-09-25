@@ -1,4 +1,3 @@
-using Unity.AppUI.Core;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -39,10 +38,10 @@ public class Gun : MonoBehaviour
         }
     }
     public void Fire(){
-        AudioSource.PlayClipAtPoint(GunFire, transform.position);
+        
         if (timer <= 0)
         {
-            
+            AudioSource.PlayClipAtPoint(GunFire, transform.position);
             GameObject Bullet = Instantiate(BulletPrefab, point.transform.position, Quaternion.Euler(0,0,90)); 
             Bullet.GetComponent<Rigidbody2D>().linearVelocity = transform.right * Bullet.GetComponent<Bullet>().bulletSpeed * aimDir;
             timer = cooldown;

@@ -73878,13 +73878,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 88524776396352302, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1960930517}
     - target: {fileID: 259829198237881693, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
       propertyPath: GunFire
       value: 
       objectReference: {fileID: 8300000, guid: 98dcd482e34632847a101bf0628fd271, type: 3}
+    - target: {fileID: 321383075502986581, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
+      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 369125922}
+    - target: {fileID: 321383075502986581, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
+      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseUnPause
+      objectReference: {fileID: 0}
     - target: {fileID: 5217795178710153610, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217795178710153610, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6340534480965434975, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73925,6 +73941,14 @@ PrefabInstance:
     - target: {fileID: 6340534480965434975, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607702203987007539, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9793389
+      objectReference: {fileID: 0}
+    - target: {fileID: 6607702203987007539, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.010330558
       objectReference: {fileID: 0}
     - target: {fileID: 8455086943898638372, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
       propertyPath: heart1
@@ -74043,6 +74067,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &369125922 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8576551192783212772, guid: 526c1f0cd4618d14eb9b4c96b20b5219, type: 3}
+  m_PrefabInstance: {fileID: 1769589700}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7118c08fc46689d43ab34410a4fca27a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!1 &402991413
 GameObject:
   m_ObjectHideFlags: 0
@@ -75451,7 +75486,7 @@ PrefabInstance:
     - target: {fileID: 3014892192249855160, guid: 526c1f0cd4618d14eb9b4c96b20b5219, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1960930507}
+      objectReference: {fileID: 1960930514}
     - target: {fileID: 3014892192249855160, guid: 526c1f0cd4618d14eb9b4c96b20b5219, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: DeathScreen
@@ -75690,7 +75725,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6340534480965434975, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
   m_PrefabInstance: {fileID: 320302403}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1960930507 stripped
+--- !u!114 &1960930514 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8455086943898638372, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
   m_PrefabInstance: {fileID: 320302403}
@@ -75701,6 +75736,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fcab07677592841ab4e9d2277e1b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::health
+--- !u!61 &1960930517 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6607702203987007539, guid: 6a61c3842fdad81459f2cae773233d02, type: 3}
+  m_PrefabInstance: {fileID: 320302403}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2026152043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3391467692277066011, guid: 526c1f0cd4618d14eb9b4c96b20b5219, type: 3}
@@ -75725,6 +75765,6 @@ SceneRoots:
   - {fileID: 432663605}
   - {fileID: 1276020623}
   - {fileID: 1128806490}
-  - {fileID: 156634428}
   - {fileID: 1376964820}
   - {fileID: 446604034}
+  - {fileID: 156634428}

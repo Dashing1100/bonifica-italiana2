@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Components")]
     private SpriteRenderer sr;
     private Rigidbody2D rb;
-    private Collider2D playerCollider;
+    public Collider2D playerCollider;
     private Animator animator;
 
     [Header("Animator Hashing")]
@@ -251,7 +251,5 @@ public class PlayerMovement : MonoBehaviour
         Vector2 origin = (Vector2)transform.position + playerCollider.offset + playerCollider.bounds.size.y / 2f * Vector2.down;
         Vector2 boxSize = new(playerCollider.bounds.size.x * 0.9f, 0.02f);
 
-        // draw the boxcast for debugging purposes
-        Gizmos.DrawCube(origin, boxSize);
     }
 }
